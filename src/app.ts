@@ -3,7 +3,7 @@ import { Application, Settings, updateSettings } from "./config"
 import { getRoutes } from "./routes"
 
 const app = express()
-const port = 8080 // default port to listen
+const port = 9000 // default port to listen
 
 export const App: Application = {
 
