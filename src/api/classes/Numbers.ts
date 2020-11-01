@@ -2,7 +2,7 @@ import { isEven, isOdd, isComposite, isPrime } from "../helpers/math"
 
 /**
  * A class to calculate the even, odd, prime and
- * composite numbers between a given start and 
+ * composite numbers between a given start and
  * end set of integers.
  *
  * @export

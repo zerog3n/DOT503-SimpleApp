@@ -1,3 +1,4 @@
+import { getComposite } from "./api/composite"
 import { getEven } from "./api/even"
 import { getOdd } from "./api/odd"
 import { getPrime } from "./api/prime"
@@ -44,6 +45,16 @@ export function getRoutes(App: Application) {
         const header = getHeader()
         const footer = getFooter()
         const response = getPrime(config.first, config.last)
+        res.send( `${header}${title}${response}${footer}` )
+    } )
+
+    // composite numbers
+    app.get( "/composite", ( req: any, res: any ) => {
+        const config = App.settings
+        const title = `<h4>Show composite numbers between ${config.first} and ${config.last}</h4>`
+        const header = getHeader()
+        const footer = getFooter()
+        const response = getComposite(config.first, config.last)
         res.send( `${header}${title}${response}${footer}` )
     } )
 
