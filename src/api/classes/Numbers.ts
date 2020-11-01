@@ -1,9 +1,9 @@
-import { isPrime } from "../helpers/math"
+import { isComposite, isPrime } from "../helpers/math"
 
 /**
- * A class to calculate the even, odd and prime
- * numbers between a given start and end set of
- * integers.
+ * A class to calculate the even, odd, prime and
+ * composite numbers between a given start and 
+ * end set of integers.
  *
  * @export
  * @class Numbers
@@ -51,6 +51,17 @@ export class Numbers {
 
         for (let i=this.first; i < this.last; i++) {
             if (isPrime(i)) result.push(i)
+        }
+
+        return result
+    }
+
+    composite() {
+        // find composite numbers
+        const result: number[] = []
+
+        for (let i=this.first; i < this.last; i++) {
+            if (isComposite(i)) result.push(i)
         }
 
         return result
