@@ -9,3 +9,10 @@ export function isOdd(num: number) {
     if (num%2 !== 0) return true
     return false
 }
+
+export function isEven(num: number) {
+    // check if number is even
+    if (num%2 === 0) return true
+    return false
+}
+
