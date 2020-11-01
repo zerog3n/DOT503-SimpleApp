@@ -1,4 +1,4 @@
-import { isPrime } from "../helpers/math"
+import { isEven, isPrime } from "../helpers/math"
 
 /**
  * A class to calculate the even, odd and prime
@@ -28,7 +28,7 @@ export class Numbers {
         const result: number[] = []
 
         for (let i=this.first; i < this.last; i++) {
-            if (i%2 === 0) result.push(i)
+            if (isEven(i)) result.push(i)
         }
 
         return result
