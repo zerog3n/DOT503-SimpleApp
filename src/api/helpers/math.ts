@@ -4,6 +4,18 @@ export function isPrime(num: number) {
     return num > 1
 }
 
+export function isEven(num: number) {
+    // check if number is even
+    if (num%2 === 0) return true
+    return false
+}
+
+export function isOdd(num: number) {
+    // check if number is odd
+    if (num%2 !== 0) return true
+    return false
+}
+
 export function isComposite(num: number) {
     // check if number is composite
     if (num%2 === 0 && !isPrime(num)) return true
