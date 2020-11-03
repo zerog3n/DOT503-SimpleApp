@@ -1,5 +1,8 @@
 pipeline {
     agent { docker { image 'node:12.19' } }
+    environment {
+        HOME = '.'
+    }
     stages {
         stage('build') {
             steps {
