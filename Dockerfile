@@ -13,7 +13,7 @@ RUN npm install \
     npm run build
 
 # Test
-RUN npm run test
+RUN npm run test app/dist/__tests__
 
 # Start
 CMD ["npm", "run", "start"]
