@@ -28,7 +28,7 @@ docker stop simpleapp
 docker rm --force simpleapp
 
 
-# --- Instructions: Using NPM ---
+# --- Instructions: Using Node.js/NPM ---
 
 # Step 1: Clone the respository
 git clone https://github.com/zerog3n/DOT503-SimpleApp.git
