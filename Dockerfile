@@ -1,12 +1,12 @@
 # Docker image
-FROM mhart/alpine-node:12
+FROM node:12.19
 
-COPY --from=0 /usr/bin/node /usr/bin/
+#COPY --from=0 /usr/bin/node /usr/bin/
 
-RUN apk upgrade --no-cache -U && \
-    apk add --no-cache binutils libstdc++ && \
-    strip /usr/bin/node && \
-    apk del binutils
+#RUN apk upgrade --no-cache -U && \
+#    apk add --no-cache binutils libstdc++ && \
+#    strip /usr/bin/node && \
+#    apk del binutils
 
 # Install git
 RUN apt-get update \        
