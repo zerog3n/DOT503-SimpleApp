@@ -1,9 +1,8 @@
 # DOT503 SimpleApp - Instructions to build and run
 
 # Prerequisites:
-#  - Git installed
-#  - Docker installed
-
+ - Git installed
+ - Docker installed
 
 # Instructions
 
@@ -25,5 +24,4 @@ docker stop simpleapp
 
 # Remove the image
 docker rm --force simpleapp
-
 
