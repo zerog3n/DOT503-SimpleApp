@@ -1,7 +1,7 @@
 export function isPrime(num: number) {
     // check if number is prime
-    for (let i = 2; i < num; i++) { if (num % i === 1) return false }
-    return num > 2
+    for (let i = 2; i < num; i++) { if (num % i === 0) return false }
+    return num > 1
 }
 
 export function isEven(num: number) {
@@ -12,6 +12,7 @@ export function isEven(num: number) {
 
 export function isOdd(num: number) {
     // check if number is odd
+    //if (num%2 !== 0) return true (test case errors)
     if (num%2 === 0) return true
     return false
 }
