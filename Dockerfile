@@ -9,11 +9,11 @@ COPY . /app
 EXPOSE 9000
 
 # Build
-RUN npm install \
-    npm run build
+RUN npm install
+RUN npm run build
 
 # Test
-RUN npm run test app/dist/__tests__
+RUN npm run test ./dist/__tests__
 
 # Start
 CMD ["npm", "run", "start"]
