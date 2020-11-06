@@ -1,11 +1,5 @@
-# FROM mhart/alpine-node:10
-# FROM alpine:3.7
-
+# Docker image
 FROM mhart/alpine-node:12
-FROM alpine:3.9
-
-# FROM mhart/alpine-node:14
-# FROM alpine:3.11
 
 COPY --from=0 /usr/bin/node /usr/bin/
 
@@ -24,6 +18,9 @@ RUN mkdir /home/build \
 
 # Set working directory
 WORKDIR /home/build
+
+# Enable ports
+EXPOSE 9000
 
 # Build
 RUN npm install \
