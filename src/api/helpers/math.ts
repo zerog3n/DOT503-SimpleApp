@@ -12,8 +12,7 @@ export function isEven(num: number) {
 
 export function isOdd(num: number) {
     // check if number is odd
-    //if (num%2 !== 0) return true (test case errors)
-    if (num%2 === 0) return true
+    if (num%2 !== 0) return true
     return false
 }
 
